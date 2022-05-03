@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Верхняя линия -->
+    <header>
+        <div class="container header">
+            <nav class="nav">
+                <a class="logo hover-color" href="./index.html"><span class="blue-text">Web</span>Studio</a>
+
+                <ul class="pages list">
+                    <li class="page"><a class="nav-link hover-color" href="./index.html">Студия</a></li>
+                    <li class="page"><a class="nav-link hover-color current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="page"><a class="nav-link hover-color" href="">Контакты</a></li>
+                </ul>
+
+            </nav>
+            <ul class="contacts list">
+                <li class="contact">
+                    <a class="contact-link hover-color" href="mailto:info@devstudio.com">
+                        <div class="contact-section">
+                            <svg class="contact-icon icon" width="16px" height="12px">
+                                <use href="./images/svg/symbol-defs.svg#mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </div>
+                    </a>
+                </li>
+
+                <li class="contact">
+                    <a class="contact-link hover-color" href="tel:+380961111111">
+                        <div class="contact-section">
+                            <svg class="contact-icon icon" width="10px" height="16px">
+                                <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- фильтры -->
+        <section class="section">
+            <div class="container">
+                <h1 class="hiden-title">Фильтр примеров работ</h1>
+                <ul class="buttons-list list">
+                    <li class="button-element"> <button class="button" type="button">Все</button>
+                    <li class="button-element"> <button class="button" type="button">Веб-сайты</button>
+                    <li class="button-element"> <button class="button" type="button">Приложения</button>
+                    <li class="button-element"> <button class="button" type="button">Дизайн</button>
+                    <li class="button-element"> <button class="button" type="button">Маркетинг</button>
+                </ul>
+
+                <!-- примеры -->
+                <ul class="examples-list list">
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example1.jpg" width="370"
+                                    alt="Ноутбук с изображенеим лавной страницы сайта Технокряк">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Технокряк</h2>
+                                <p class="project-type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example2.jpg" width="370"
+                                    alt="Постер New Orlean vs Golden Star">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="project-type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example3.jpg" width="370"
+                                    alt="Логотип ресторана Seafood">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Ресторан Seafood</h2>
+                                <p class="project-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example4.jpg" width="370"
+                                    alt="Наушники">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Проект Prime</h2>
+                                <p class="project-type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example5.jpg" width="370"
+                                    alt="Белая и оранжевая коробки">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Проект Boxes</h2>
+                                <p class="project-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example6.jpg" width="370"
+                                    alt="Моноблок с изображением главной страницы сайта Inspiration has no Borders">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Inspiration has no Borders</h2>
+                                <p class="project-type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example7.jpg" width="370"
+                                    alt="Журнал Limited Edition">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Издание Limited Edition</h2>
+                                <p class="project-type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example8.jpg" width="370"
+                                    alt="Бирка Lab el tag">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Проект LAB</h2>
+                                <p class="project-type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="example-card">
+                        <a href="" class="example-card-link">
+                            <div class="thumb-card">
+                                <img class="example-photo" src="./images/portfolio/example9.jpg" width="370"
+                                    alt="ноутбук с изображением главной страницы сайта Growing Business">
+                                <div class="overlay">
+                                    <p class="overlay-description">Ресурс предлагает комплексные предложения с разным
+                                        уровнем
+                                        функционала и сервисов. Все
+                                        это позволит посетителю получить исчерпывающие сведения о компании или частном
+                                        лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="example-info">
+                                <h2 class="example-title">Growing Business</h2>
+                                <p class="project-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container footer">
+            <div class="address-nav">
+                <a class="footer-logo hover-color" href="./index.html"><span class="blue-text">Web</span>Studio</a>
+                <address>
+                    <ul class="address-list list">
+                        <li class="address">
+                            <a class="footer-address hover-color" href="https://goo.gl/maps/xgKNqcMdcs3EZ4Po8"
+                                target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="address">
+                            <a class="footer-mail hover-color" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address">
+                            <a class="footer-tel hover-color" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer-join">
+                <h2 class="join-title">Присоединяйтесь</h2>
+                <ul class="join-list list">
+                    <li class="join-item">
+                        <a class="join-link hover-color" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="join-icon" width="20" height="20">
+                                <use href="./images/svg/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-item">
+                        <a class="join-link hover-color" href="https://twitter.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="join-icon" width="20" height="20">
+                                <use href="./images/svg/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-item">
+                        <a class="join-link hover-color" href="https://facebook.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="join-icon" width="20" height="20">
+                                <use href="./images/svg/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join-item">
+                        <a class="join-link hover-color" href="https://ua.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="join-icon" width="20" height="20">
+                                <use href="./images/svg/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Форма -->
+
+            <form class="subscribe">
+
+                <b class="subscribe-title">Подпишитесь на рассылку</b>
+
+                <div class="subscribe-form">
+                    <label for="e-mail" class="subscribe-title"></label>
+                    <input class="subscribe-input" type="email" name="e-mail" placeholder="E-mail" id="e-mail">
+
+                    <button class="subscribe-btn" type="submit">Подписаться
+                        <svg class="footertelegramm" width="24px" height="24px">
+                            <use href="./images/svg/icons.svg#footertelegramm"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
