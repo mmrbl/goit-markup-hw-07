@@ -503,7 +503,7 @@ header {
 
 /* Фильтры */
 
-.buttons-list {
+.filter__buttons-set {
     display: flex;
     align-items: center;
 
@@ -512,11 +512,11 @@ header {
     margin-bottom: 50px;
 }
 
-.buttons-list .button-element+.button-element {
+.filter__buttons-item:not(:first-child) {
     margin-left: 8px;
 }
 
-.button {
+.filter__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -535,8 +535,8 @@ header {
         box-shadow 250ms var(--main-transition-time);
 }
 
-.button:hover,
-.button:focus {
+.filter__button:hover,
+.filter__button:focus {
     background: var(--hover-focus-color);
     color: var(--white-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -544,7 +544,7 @@ header {
 
 /* Примеры */
 
-.examples-list {
+.filter__examples-set {
     display: flex;
     flex-wrap: wrap;
 
@@ -552,7 +552,7 @@ header {
     margin-left: calc(-1 * var(--card-gap));
 }
 
-.example-card {
+.filter__example-card {
     margin-top: var(--card-gap);
     margin-left: var(--card-gap);
 
@@ -563,23 +563,23 @@ header {
     background: var(--white-text-color);
 }
 
-.example-card-link {
+.filter__example-card-link {
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms var(--main-transition-time);
 }
 
-.example-card-link:hover,
-.example-card-link:focus {
+.filter__example-card-link:hover,
+.filter__example-card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.thumb-card {
+.filter__thumb-card {
     position: relative;
     overflow: hidden;
 }
 
-.overlay {
+.filter__overlay {
     position: absolute;
 
     top: 0;
@@ -588,16 +588,16 @@ header {
     height: 100%;
 
     background: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--main-transition-time);
 }
 
-.example-card-link:hover .overlay,
-.example-card-link:focus .overlay {
+.filter__example-card-link:hover .filter__overlay,
+.filter__example-card-link:focus .filter__overlay {
     transform: translateY(0);
 }
 
-.overlay-description {
+.filter__overlay-description {
     position: relative;
     padding: 63px 24px;
 
@@ -611,7 +611,7 @@ header {
     letter-spacing: 0.03em;
 }
 
-.example-info {
+.filter__example-info {
     padding: 20px 24px;
 
     border-right: 1px solid #EEEEEE;
@@ -620,7 +620,7 @@ header {
     box-sizing: border-box;
 }
 
-.example-title {
+.filter__example-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -632,7 +632,7 @@ header {
     color: var(--primary-text-color);
 }
 
-.project-type {
+.filter__project-type {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
