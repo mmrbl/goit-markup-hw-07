@@ -121,7 +121,10 @@ header {
 
 .current {
     position: relative;
-
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     color: var(--hover-focus-color);
 }
 
