@@ -544,7 +544,7 @@ header {
 
 /* Примеры */
 
-.filter__examples-set {
+.examples__set {
     display: flex;
     flex-wrap: wrap;
 
@@ -552,7 +552,7 @@ header {
     margin-left: calc(-1 * var(--card-gap));
 }
 
-.filter__example-card {
+.examples__card {
     margin-top: var(--card-gap);
     margin-left: var(--card-gap);
 
@@ -563,23 +563,23 @@ header {
     background: var(--white-text-color);
 }
 
-.filter__example-card-link {
+.examples__card-link {
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms var(--main-transition-time);
 }
 
-.filter__example-card-link:hover,
-.filter__example-card-link:focus {
+.examples__card-link:hover,
+.examples__card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.filter__thumb-card {
+.examples__thumb-card {
     position: relative;
     overflow: hidden;
 }
 
-.filter__overlay {
+.examples__overlay {
     position: absolute;
 
     top: 0;
@@ -592,12 +592,12 @@ header {
     transition: transform 250ms var(--main-transition-time);
 }
 
-.filter__example-card-link:hover .filter__overlay,
-.filter__example-card-link:focus .filter__overlay {
+.examples__card-link:hover .examples__overlay,
+.examples__card-link:focus .examples__overlay {
     transform: translateY(0);
 }
 
-.filter__overlay-description {
+.examples__overlay-description {
     position: relative;
     padding: 63px 24px;
 
@@ -611,7 +611,7 @@ header {
     letter-spacing: 0.03em;
 }
 
-.filter__example-info {
+.examples__thumb-info {
     padding: 20px 24px;
 
     border-right: 1px solid #EEEEEE;
@@ -620,7 +620,7 @@ header {
     box-sizing: border-box;
 }
 
-.filter__example-title {
+.examples__thumb-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -632,7 +632,7 @@ header {
     color: var(--primary-text-color);
 }
 
-.filter__project-type {
+.examples__thumb-type {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -705,11 +705,13 @@ footer {
     margin-top: 9px;
 }
 
-.footer__join {
+/* соцсети в футере */
+
+.join {
     margin-left: 70px;
 }
 
-.footer__join-title {
+.join__title {
     color: var(--white-text-color);
 
     font-weight: 700;
@@ -719,16 +721,16 @@ footer {
     text-transform: uppercase;
 }
 
-.footer__join-set {
+.join__set {
     display: flex;
     margin-top: 20px;
 }
 
-.footer__join-item:not(:first-child) {
+.join__item:not(:first-child) {
     margin-left: 10px;
 }
 
-.footer__join-link {
+.join__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -740,20 +742,20 @@ footer {
     transition: background-color 250ms var(--main-transition-time);
 }
 
-.footer__join-link:hover,
-.footer__join-link:focus {
+.join__link:hover,
+.join__link:focus {
     background-color: var(--hover-focus-color);
 }
 
 /* Форма подписки */
 
-.footer__subscribe {
+.subscribe {
     display: block;
     margin-left: 93px;
 
 }
 
-.footer__subscribe-title {
+.subscribe__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -763,12 +765,12 @@ footer {
     color: var(--white-text-color);
 }
 
-.footer__subscribe-form {
+.subscribe__form {
     display: flex;
     margin-top: 20px;
 }
 
-.footer__subscribe-input {
+.subscribe__input {
     width: 358px;
     height: 50px;
     padding: 15px;
@@ -783,13 +785,13 @@ footer {
     transition: border 250ms var(--main-transition-time);
 }
 
-.footer__subscribe-input:hover,
-.footer__subscribe-input:focus {
+.subscribe__input:hover,
+.subscribe__input:focus {
     outline: none;
     border: 1px solid var(--hover-focus-color);
 }
 
-.footer__subscribe-btn {
+.subscribe__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -810,12 +812,12 @@ footer {
     fill: var(--white-text-color);
 }
 
-.footer__subscribe-btn:hover,
-.footer__subscribe-btn:focus {
+.subscribe__btn:hover,
+.subscribe__btn:focus {
     cursor: pointer;
 }
 
-.footer__telegramm-icon {
+.telegramm__icon {
     margin-left: 10px;
 }
 
