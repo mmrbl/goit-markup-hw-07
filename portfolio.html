@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- Верхняя линия -->
     <header>
-        <div class="header container">
-            <nav class="header__nav">
-                <a class="header__logo hover-color" href="./index.html"><span
-                        class="logo--accent-text">Web</span>Studio</a>
+        <div class="flex-vertical-align container">
+            <nav class="flex-vertical-align">
+                <a class="nav__logo hover-color" href="./index.html"><span
+                        class="nav__logo--accent-text">Web</span>Studio</a>
 
-                <ul class="header__pages list">
-                    <li class="header__page">
-                        <a class="header__nav-link hover-color" href="./index.html">Студия</a>
+                <ul class="pages flex-vertical-align list">
+                    <li class="pages__page">
+                        <a class="nav-link hover-color" href="./index.html">Студия</a>
                     </li>
-                    <li class="header__page">
-                        <p class="header__nav-link hover-color header__nav-link--active">Портфолио</p>
+                    <li class="pages__page">
+                        <p class="nav-link hover-color nav-link--active">Портфолио</p>
                     </li>
-                    <li class="header__page">
-                        <a class="header__nav-link hover-color" href="">Контакты</a>
+                    <li class="pages__page">
+                        <a class="nav-link hover-color" href="">Контакты</a>
                     </li>
                 </ul>
 
             </nav>
-            <ul class="header__contacts list">
-                <li class="header__contact">
-                    <a class="header__contact-link hover-color" href="mailto:info@devstudio.com">
-                        <svg class="header__contact-icon" width="16px" height="12px">
+            <ul class="contacts flex-vertical-align list">
+                <li class="contacts__contact contact">
+                    <a class="link flex-vertical-align hover-color" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon" width="16px" height="12px">
                             <use href="./images/svg/icons.svg#mail"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
 
-                <li class="header__contact">
-                    <a class="header__contact-link hover-color" href="tel:+380961111111">
-                        <svg class="header__contact-icon" width="10px" height="16px">
+                <li class="contact">
+                    <a class="link flex-vertical-align hover-color" href="tel:+380961111111">
+                        <svg class="contact__icon" width="10px" height="16px">
                             <use href="./images/svg/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -63,8 +63,8 @@
         <!-- фильтры -->
         <section class="section">
             <div class="filter container">
-                <h1 class="filter__title hiden-title">Фильтр примеров работ</h1>
-                <ul class="filter__buttons-set list">
+                <h1 class="filter__title hiden-element">Фильтр примеров работ</h1>
+                <ul class="filter__buttons flex-vertical-align list">
                     <li class="filter__buttons-item">
                         <button class="filter__button" type="button">Все</button>
                     </li>
@@ -86,13 +86,13 @@
             <!-- примеры -->
             <div class="examples container">
                 <ul class="examples__set list">
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example1.jpg" width="370"
                                     alt="Ноутбук с изображенеим лавной страницы сайта Технокряк">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -101,19 +101,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Технокряк</h2>
-                                <p class="examples__thumb-type">Веб-сайт</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Технокряк</h2>
+                                <p class="thumb__type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example2.jpg" width="370"
                                     alt="Постер New Orlean vs Golden Star">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -122,19 +122,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="examples__thumb-type">Дизайн</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="thumb__type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example3.jpg" width="370"
                                     alt="Логотип ресторана Seafood">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -143,19 +143,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Ресторан Seafood</h2>
-                                <p class="examples__thumb-type">Приложение</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Ресторан Seafood</h2>
+                                <p class="thumb__type">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example4.jpg" width="370"
                                     alt="Наушники">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -164,20 +164,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Проект Prime</h2>
-                                <p class="examples__thumb-type">Маркетинг</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Проект Prime</h2>
+                                <p class="thumb__type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
 
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example5.jpg" width="370"
                                     alt="Белая и оранжевая коробки">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -186,19 +186,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Проект Boxes</h2>
-                                <p class="examples__thumb-type">Приложение</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Проект Boxes</h2>
+                                <p class="thumb__type">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example6.jpg" width="370"
                                     alt="Моноблок с изображением главной страницы сайта Inspiration has no Borders">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -207,19 +207,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Inspiration has no Borders</h2>
-                                <p class="examples__thumb-type">Веб-сайт</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Inspiration has no Borders</h2>
+                                <p class="thumb__type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example7.jpg" width="370"
                                     alt="Журнал Limited Edition">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -228,19 +228,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Издание Limited Edition</h2>
-                                <p class="examples__thumb-type">Дизайн</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Издание Limited Edition</h2>
+                                <p class="thumb__type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example8.jpg" width="370"
                                     alt="Бирка Lab el tag">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -249,19 +249,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Проект LAB</h2>
-                                <p class="examples__thumb-type">Маркетинг</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Проект LAB</h2>
+                                <p class="thumb__type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="examples__card">
-                        <a href="" class="examples__card-link">
-                            <div class="examples__thumb-card">
+                    <li class="example">
+                        <a href="" class="example__card-link">
+                            <div class="thumb">
                                 <img class="filter__example-photo" src="./images/portfolio/example9.jpg" width="370"
                                     alt="ноутбук с изображением главной страницы сайта Growing Business">
-                                <div class="examples__overlay">
-                                    <p class="examples__overlay-description">Ресурс предлагает комплексные предложения с
+                                <div class="overlay">
+                                    <p class="overlay__description">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем
                                         функционала и сервисов. Все
@@ -270,9 +270,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="examples__thumb-info">
-                                <h2 class="examples__thumb-title">Growing Business</h2>
-                                <p class="examples__thumb-type">Приложение</p>
+                            <div class="thumb__info">
+                                <h2 class="thumb__title">Growing Business</h2>
+                                <p class="thumb__type">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -287,18 +287,18 @@
         <div class="container footer">
             <div class="footer__address-nav">
                 <a class="footer__logo hover-color" href="./index.html"><span
-                        class="logo--accent-text">Web</span>Studio</a>
-                <address class="footer__address">
-                    <ul class="footer__address-set list">
-                        <li class="footer__address-item">
-                            <a class="footer__address-link hover-color" href="https://goo.gl/maps/xgKNqcMdcs3EZ4Po8"
+                        class="footer__logo--accent-text">Web</span>Studio</a>
+                <address>
+                    <ul class="address__set list">
+                        <li class="address">
+                            <a class="address__link hover-color" href="https://goo.gl/maps/xgKNqcMdcs3EZ4Po8"
                                 target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="footer__address-item">
-                            <a class="footer__mail hover-color" href="mailto:info@example.com">info@example.com</a>
+                        <li class="address">
+                            <a class="address__mail hover-color" href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class="footer__address-item">
-                            <a class="footer__tel hover-color" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="address">
+                            <a class="address__tel hover-color" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -306,34 +306,34 @@
 
             <div class="join">
                 <h2 class="join__title">Присоединяйтесь</h2>
-                <ul class="join__set list">
-                    <li class="join__item">
-                        <a class="join__link hover-color" href="https://www.instagram.com/" target="_blank"
-                            rel="noopener noreferrer">
+                <ul class="socials list">
+                    <li class="socials__item">
+                        <a class="socials__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                            target="_blank" rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join__item">
-                        <a class="join__link hover-color" href="https://twitter.com/" target="_blank"
-                            rel="noopener noreferrer">
+                    <li class="socials__item">
+                        <a class="socials__link flex-vertical-align hover-color" href="https://twitter.com/"
+                            target="_blank" rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join__item">
-                        <a class="join__link hover-color" href="https://facebook.com/" target="_blank"
-                            rel="noopener noreferrer">
+                    <li class="socials__item">
+                        <a class="socials__link flex-vertical-align hover-color" href="https://facebook.com/"
+                            target="_blank" rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join__item">
-                        <a class="join__link hover-color" href="https://ua.linkedin.com/" target="_blank"
-                            rel="noopener noreferrer">
+                    <li class="socials__item">
+                        <a class="socials__link flex-vertical-align hover-color" href="https://ua.linkedin.com/"
+                            target="_blank" rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#linkedin"></use>
                             </svg>
@@ -348,12 +348,12 @@
 
                 <b class="subscribe__title">Подпишитесь на рассылку</b>
 
-                <div class="subscribe__form">
+                <div class="form">
                     <label for="e-mail" class="subscribe-title"></label>
-                    <input class="subscribe__input" type="email" name="e-mail" placeholder="E-mail" id="e-mail">
+                    <input class="form__input" type="email" name="e-mail" placeholder="E-mail" id="e-mail">
 
-                    <button class="subscribe__btn" type="submit">Подписаться
-                        <svg class="telegramm__icon" width="24px" height="24px">
+                    <button class="subscribe__btn flex-vertical-align" type="submit">Подписаться
+                        <svg class="subscribe__btn-icon " width="24px" height="24px">
                             <use href="./images/svg/icons.svg#footertelegramm"></use>
                         </svg>
                     </button>

@@ -1,0 +1,59 @@
+footer {
+    padding: 60px 0;
+    background-color: #2F303A;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+
+    &__address-nav {
+            flex-grow: 1;
+        }
+    
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: $white-text-color;
+        display: block;
+        margin-bottom: 20px;
+        transition: color 250ms $main-transition-time;
+    }
+}
+
+.address {
+    display: block;
+
+    &__item {
+            margin-top: 9px;
+        }
+    
+    &__link {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        text-decoration: none;
+        color: $white-text-color;
+        transition: color 250ms $main-transition-time;
+    }
+
+    &__mail,
+    &__tel {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .6);
+        transition: color 250ms $main-transition-time;
+    }
+}
+
+
+
+

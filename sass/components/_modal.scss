@@ -1,0 +1,36 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: $white-text-color;
+    transition: transform 250ms $main-transition-time;
+
+
+    &__button {
+            position: absolute;
+            justify-content: center;
+            top: 8px;
+            right: 8px;
+    
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+    
+            border-radius: 50%;
+            background: $white-text-color;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: fill 250ms $main-transition-time;
+    
+            &:hover,
+            &:focus {
+                fill: $hover-focus-color;
+                cursor: pointer;
+            }
+        }
+}
+
+
+

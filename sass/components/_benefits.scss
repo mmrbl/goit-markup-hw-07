@@ -1,0 +1,45 @@
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* $card-gap);
+    margin-left: calc(-1* $card-gap);
+
+    &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            margin-bottom: 10px;
+        }
+    
+    
+        &__description {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+    
+            color: $secondary-text-color;
+    
+            margin-top: 0;
+        }
+
+}
+
+.benefit {
+    margin-top: $card-gap;
+    margin-left: $card-gap;
+
+    flex-basis: calc(100% / 4 - $card-gap);
+
+    &__icon-set {
+            justify-content: center;
+            margin-bottom: 30px;
+    
+            width: 270px;
+            height: 120px;
+            background: #F5F4FA;
+            border-radius: 4px;
+        }
+}

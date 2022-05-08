@@ -11,42 +11,42 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <!-- Верхняя линия -->
   <header>
-    <div class="header container">
-      <nav class="header__nav">
-        <a class="header__logo hover-color" href="./index.html"><span class="logo--accent-text">Web</span>Studio</a>
+    <div class="flex-vertical-align container">
+      <nav class="flex-vertical-align">
+        <a class="nav__logo hover-color" href="./index.html"><span class="nav__logo--accent-text">Web</span>Studio</a>
 
-        <ul class="header__pages list">
-          <li class="header__page">
-            <p class="header__nav-link hover-color header__nav-link--active">Студия</p>
+        <ul class="pages flex-vertical-align list">
+          <li class="pages__page">
+            <p class="nav-link hover-color nav-link--active">Студия</p>
           </li>
-          <li class="header__page">
-            <a class="header__nav-link hover-color" href="./portfolio.html">Портфолио</a>
+          <li class="pages__page">
+            <a class="nav-link hover-color" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="header__page">
-            <a class="header__nav-link hover-color" href="">Контакты</a>
+          <li class="pages__page">
+            <a class="nav-link hover-color" href="">Контакты</a>
           </li>
         </ul>
 
       </nav>
-      <ul class="header__contacts list">
-        <li class="header__contact">
-          <a class="header__contact-link hover-color" href="mailto:info@devstudio.com">
-            <svg class="header__contact-icon" width="16px" height="12px">
+      <ul class="contacts flex-vertical-align list">
+        <li class="contacts__contact contact">
+          <a class="link flex-vertical-align hover-color" href="mailto:info@devstudio.com">
+            <svg class="contact__icon" width="16px" height="12px">
               <use href="./images/svg/icons.svg#mail"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
 
-        <li class="header__contact">
-          <a class="header__contact-link hover-color" href="tel:+380961111111">
-            <svg class="header__contact-icon" width="10px" height="16px">
+        <li class="contact">
+          <a class="link flex-vertical-align hover-color" href="tel:+380961111111">
+            <svg class="contact__icon" width="10px" height="16px">
               <use href="./images/svg/icons.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -57,7 +57,7 @@
   </header>
 
   <main>
-    <!-- Шапка -->
+    <!-- Герой -->
     <section class="hero">
       <div class="hero__container container">
         <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -66,13 +66,13 @@
     </section>
 
     <!-- Особенности -->
-    <section class="benefits section">
+    <section class="section">
       <div class="container">
-        <h2 class="benefits__title hiden-title">Наши преимущества</h2>
-        <ul class="benefits__list list">
-          <li class="benefits__element">
-            <div class="benefits__icon-set">
-              <svg class="benefits__icon" width="65.32px" height="70px">
+        <h2 class="benefits__title hiden-element">Наши преимущества</h2>
+        <ul class="benefits list">
+          <li class="benefit">
+            <div class="benefit__icon-set flex-vertical-align">
+              <svg class="benefit__icon" width="65.32px" height="70px">
                 <use href="./images/svg/icons.svg#anthena"></use>
               </svg>
             </div>
@@ -81,9 +81,9 @@
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="benefits__element">
-            <div class="benefits__icon-set">
-              <svg class="benefits__icon" width="70" height="70">
+          <li class="benefit">
+            <div class="benefit__icon-set flex-vertical-align">
+              <svg class="benefit__icon" width="70" height="70">
                 <use href="./images/svg/icons.svg#clock"></use>
               </svg>
             </div>
@@ -92,9 +92,9 @@
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="benefits__element">
-            <div class="benefits__icon-set">
-              <svg class="benefits__icon" width="70" height="70">
+          <li class="benefit">
+            <div class="benefit__icon-set flex-vertical-align">
+              <svg class="benefit__icon" width="70" height="70">
                 <use href="./images/svg/icons.svg#diagram"></use>
               </svg>
             </div>
@@ -103,9 +103,9 @@
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li class="benefits__element">
-            <div class="benefits__icon-set">
-              <svg class="benefits__icon" width="70" height="70">
+          <li class="benefit">
+            <div class="benefit__icon-set flex-vertical-align">
+              <svg class="benefit__icon" width="70" height="70">
                 <use href="./images/svg/icons.svg#astronaut"></use>
               </svg>
             </div>
@@ -119,26 +119,26 @@
     </section>
 
     <!-- Чем мы занимаемся -->
-    <section class="section actions">
+    <section class="actions section">
       <div class="container">
         <h2 class="actions__title secondary-title">Чем мы занимаемся</h2>
         <ul class="actions__set list">
-          <li class="actions__ellement">
+          <li class="action">
             <img src="./images/webstudio/img.jpg" alt="печать на клавиатуре" width="370" />
-            <div class="action-thumb">
-              <p class="action-title">Десктопные приложения</p>
+            <div class="action__thumb flex-vertical-align">
+              <p class="action__title">Десктопные приложения</p>
             </div>
           </li>
-          <li class="actions__ellement">
+          <li class="action">
             <img src="./images/webstudio/img-1.jpg" alt="держит телефон" width="370" />
-            <div class="action-thumb">
-              <p class="action-title">Мобильные приложения</p>
+            <div class="action__thumb flex-vertical-align">
+              <p class="action__title">Мобильные приложения</p>
             </div>
           </li>
-          <li class="actions__ellement">
+          <li class="action">
             <img src="./images/webstudio/img-2.jpg" alt="цветовая палитра" width="370" />
-            <div class="action-thumb">
-              <p class="action-title">Дизайнерские решения</p>
+            <div class="action__thumb flex-vertical-align">
+              <p class="action__title">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
@@ -149,40 +149,40 @@
     <section class="team section">
       <div class="container">
         <h2 class="team__title secondary-title">Наша команда</h2>
-        <ul class="team__cardset list">
-          <li class="team__mate-card">
+        <ul class="cardset flex-vertical-align list">
+          <li class="cardset__card">
             <img src="./images/webstudio/demyanenko.jpg" width="270" alt="Игорь Демьяненко" />
-            <div class="team__mate-info">
-              <h3 class="team__mate-title">Игорь Демьяненко</h3>
-              <p class="team__mate-profession">Product Designer</p>
-              <ul class="team__mate-joinlist list">
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+            <div class="mate">
+              <h3 class="mate__title">Игорь Демьяненко</h3>
+              <p class="mate__profession">Product Designer</p>
+              <ul class="joinlist list">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#linkedin"></use>
                     </svg>
@@ -192,39 +192,39 @@
             </div>
           </li>
 
-          <li class="team__mate-card">
+          <li class="cardset__card">
             <img src="./images/webstudio/repina.jpg" width="270" alt="Ольга Репина" />
-            <div class="team__mate-info">
-              <h3 class="team__mate-title">Ольга Репина</h3>
-              <p class="team__mate-profession">Frontend Developer</p>
-              <ul class="team__mate-joinlist list">
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+            <div class="mate">
+              <h3 class="mate__title">Ольга Репина</h3>
+              <p class="mate__profession">Frontend Developer</p>
+              <ul class="joinlist list">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#linkedin"></use>
                     </svg>
@@ -234,39 +234,39 @@
             </div>
           </li>
 
-          <li class="team__mate-card">
+          <li class="cardset__card">
             <img src="./images/webstudio/tarasov.jpg" width="270" alt="Николай Тарасов" />
-            <div class="team__mate-info">
-              <h3 class="team__mate-title">Николай Тарасов</h3>
-              <p class="team__mate-profession">Marketing</p>
-              <ul class="team__mate-joinlist list">
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+            <div class="mate">
+              <h3 class="mate__title">Николай Тарасов</h3>
+              <p class="mate__profession">Marketing</p>
+              <ul class="joinlist list">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#linkedin"></use>
                     </svg>
@@ -276,39 +276,39 @@
             </div>
           </li>
 
-          <li class="team__mate-card">
+          <li class="cardset__card">
             <img src="./images/webstudio/ermakov.jpg" width="270" alt="Михаил Ермаков" />
-            <div class="team__mate-info">
-              <h3 class="team__mate-title">Михаил Ермаков</h3>
-              <p class="team__mate-profession">UI Designer</p>
-              <ul class="team__mate-joinlist list">
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+            <div class="mate">
+              <h3 class="mate__title">Михаил Ермаков</h3>
+              <p class="mate__profession">UI Designer</p>
+              <ul class="joinlist list">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__mate-join-item">
-                  <a class="team__mate-join-link hover-color" href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">
+                <li class="joinlist__item">
+                  <a class="joinlist__link flex-vertical-align hover-color" href="https://www.instagram.com/"
+                    target="_blank" rel="noopener noreferrer">
                     <svg class="join-icon" width="20" height="20">
                       <use href="./images/svg/icons.svg#linkedin"></use>
                     </svg>
@@ -329,44 +329,44 @@
       <h2 class="clients__title">Постоянные клиенты</h2>
       <div class="clients">
         <ul class="clients__set list">
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="106px" height="60px">
+          <li class="client">
+            <a href="" class="client__link flex-vertical-align">
+              <svg class="client__icon" width="106px" height="60px">
                 <use href="./images/svg/icons.svg#yaco"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="106px" height="60px">
+          <li class="client">
+            <a href="" class="client__link flex-vertical-align">
+              <svg class="client__icon" width="106px" height="60px">
                 <use href="./images/svg/icons.svg#tagline"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="106px" height="60px">
+          <li class="client">
+            <a href="" class="client__link flex-vertical-align">
+              <svg class="client__icon" width="106px" height="60px">
                 <use href="./images/svg/icons.svg#company"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="106px" height="60px">
+          <li class="client">
+            <a href="" class="client__link flex-vertical-align">
+              <svg class="client__icon" width="106px" height="60px">
                 <use href="./images/svg/icons.svg#foster "></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="106px" height="60px">
+          <li class="client">
+            <a href="" class="client__link flex-vertical-align">
+              <svg class="client__icon" width="106px" height="60px">
                 <use href="./images/svg/icons.svg#brand"></use>
               </svg>
             </a>
           </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="106px" height="60px">
+          <li class="client">
+            <a href="" class="client__link flex-vertical-align">
+              <svg class="client__icon" width="106px" height="60px">
                 <use href="./images/svg/icons.svg#company-tag"></use>
               </svg>
             </a>
@@ -380,18 +380,19 @@
   <footer>
     <div class="container footer">
       <div class="footer__address-nav">
-        <a class="footer__logo hover-color" href="./index.html"><span class="logo--accent-text">Web</span>Studio</a>
-        <address class="footer__address">
-          <ul class="footer__address-set list">
-            <li class="footer__address-item">
-              <a class="footer__address-link hover-color" href="https://goo.gl/maps/xgKNqcMdcs3EZ4Po8" target="_blank"
+        <a class="footer__logo hover-color" href="./index.html"><span
+            class="footer__logo--accent-text">Web</span>Studio</a>
+        <address>
+          <ul class="address__set list">
+            <li class="address">
+              <a class="address__link hover-color" href="https://goo.gl/maps/xgKNqcMdcs3EZ4Po8" target="_blank"
                 rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li class="footer__address-item">
-              <a class="footer__mail hover-color" href="mailto:info@example.com">info@example.com</a>
+            <li class="address">
+              <a class="address__mail hover-color" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="footer__address-item">
-              <a class="footer__tel hover-color" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="address">
+              <a class="address__tel hover-color" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
@@ -399,31 +400,34 @@
 
       <div class="join">
         <h2 class="join__title">Присоединяйтесь</h2>
-        <ul class="join__set list">
-          <li class="join__item">
-            <a class="join__link hover-color" href="https://www.instagram.com/" target="_blank"
+        <ul class="socials list">
+          <li class="socials__item">
+            <a class="socials__link flex-vertical-align hover-color" href="https://www.instagram.com/" target="_blank"
               rel="noopener noreferrer">
               <svg class="join__icon" width="20" height="20">
                 <use href="./images/svg/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="join__item">
-            <a class="join__link hover-color" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <li class="socials__item">
+            <a class="socials__link flex-vertical-align hover-color" href="https://twitter.com/" target="_blank"
+              rel="noopener noreferrer">
               <svg class="join__icon" width="20" height="20">
                 <use href="./images/svg/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="join__item">
-            <a class="join__link hover-color" href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+          <li class="socials__item">
+            <a class="socials__link flex-vertical-align hover-color" href="https://facebook.com/" target="_blank"
+              rel="noopener noreferrer">
               <svg class="join__icon" width="20" height="20">
                 <use href="./images/svg/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="join__item">
-            <a class="join__link hover-color" href="https://ua.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <li class="socials__item">
+            <a class="socials__link flex-vertical-align hover-color" href="https://ua.linkedin.com/" target="_blank"
+              rel="noopener noreferrer">
               <svg class="join__icon" width="20" height="20">
                 <use href="./images/svg/icons.svg#linkedin"></use>
               </svg>
@@ -438,12 +442,12 @@
 
         <b class="subscribe__title">Подпишитесь на рассылку</b>
 
-        <div class="subscribe__form">
+        <div class="form">
           <label for="e-mail" class="subscribe-title"></label>
-          <input class="subscribe__input" type="email" name="e-mail" placeholder="E-mail" id="e-mail">
+          <input class="form__input" type="email" name="e-mail" placeholder="E-mail" id="e-mail">
 
-          <button class="subscribe__btn" type="submit">Подписаться
-            <svg class="telegramm__icon" width="24px" height="24px">
+          <button class="subscribe__btn flex-vertical-align" type="submit">Подписаться
+            <svg class="subscribe__btn-icon " width="24px" height="24px">
               <use href="./images/svg/icons.svg#footertelegramm"></use>
             </svg>
           </button>
@@ -458,28 +462,28 @@
 
     <div class="modal">
       <form role="group" class="modal__form-set">
-        <b class="modal-set-title">Оставьте свои данные, мы вам перезвоним</b>
+        <b class="modal__form-set-title">Оставьте свои данные, мы вам перезвоним</b>
 
         <label class="modal__label" for="name">Имя</label>
         <div class="modal__form">
-          <input class="modal__input" type="text" name="name" id="name" placeholder="">
-          <svg class="modal__icon-form" width="12px" height="12px">
+          <input class="modal__form-input" type="text" name="name" id="name" placeholder="">
+          <svg class="modal__form-icon" width="12px" height="12px">
             <use href="./images/svg/icons.svg#modalname"></use>
           </svg>
         </div>
 
         <label class="modal__label" for="phone">Телефон</label>
         <div class="modal__form">
-          <input class="modal__input" type="tel" name="phone" id="phone" placeholder="">
-          <svg class="modal__icon-form" width="13px" height="13px">
+          <input class="modal__form-input" type="tel" name="phone" id="phone" placeholder="">
+          <svg class="modal__form-icon" width="13px" height="13px">
             <use href="./images/svg/icons.svg#modalphone"></use>
           </svg>
         </div>
 
         <label class="modal__label" for="mail">Почта</label>
         <div class="modal__form">
-          <input class="modal__input" type="email" name="mail" id="mail" placeholder="">
-          <svg class="modal__icon-form" width="15px" height="12px">
+          <input class="modal__form-input" type="email" name="mail" id="mail" placeholder="">
+          <svg class="modal__form-icon" width="15px" height="12px">
             <use href="./images/svg/icons.svg#modalmail"></use>
           </svg>
         </div>
@@ -488,9 +492,9 @@
         <textarea class="modal__textarea modal__input-comment" name="comment" rows="5" id="comment"
           placeholder="Введите текст"></textarea>
 
-        <label class="modal__label-checkbox">
-          <input class="modal__input-checkbox" type="checkbox" name="accept" />
-          <span class="modal__accept-icon">
+        <label class="modal__label-checkbox flex-vertical-align">
+          <input class="modal__input-checkbox hiden-element" type="checkbox" name="accept" />
+          <span class="modal__accept-icon flex-vertical-align">
             <svg width="15" height="15">
               <use href="./images/svg/icons.svg#accept-icon"></use>
             </svg>
@@ -506,7 +510,7 @@
 
       </form>
 
-      <button class="modal__button" type="button" data-modal-close>
+      <button class="modal__button flex-vertical-align" type="button" data-modal-close>
         <svg class="close-icon" width="11" height="11">
           <use href="./images/svg/icons.svg#close-modal"></use>
         </svg>
