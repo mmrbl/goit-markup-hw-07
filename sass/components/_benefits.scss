@@ -4,6 +4,25 @@
     margin-top: calc(-1* $card-gap);
     margin-left: calc(-1* $card-gap);
 
+    &__item {
+            margin-top: $card-gap;
+            margin-left: $card-gap;
+    
+            flex-basis: calc(100% / 4 - $card-gap);
+        }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
+
     &__title {
             font-weight: 700;
             font-size: 14px;
@@ -15,31 +34,14 @@
         }
     
     
-        &__description {
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-    
-            color: $secondary-text-color;
-    
-            margin-top: 0;
-        }
+    &__description {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
 
-}
+        color: $secondary-text-color;
 
-.benefit {
-    margin-top: $card-gap;
-    margin-left: $card-gap;
+        margin-top: 0;
+    }
 
-    flex-basis: calc(100% / 4 - $card-gap);
-
-    &__icon-set {
-            justify-content: center;
-            margin-bottom: 30px;
-    
-            width: 270px;
-            height: 120px;
-            background: #F5F4FA;
-            border-radius: 4px;
-        }
 }

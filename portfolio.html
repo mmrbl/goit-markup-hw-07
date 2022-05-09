@@ -17,38 +17,38 @@
 
 <body>
     <!-- Верхняя линия -->
-    <header>
-        <div class="flex-vertical-align container">
-            <nav class="flex-vertical-align">
+    <header class="header">
+        <div class="header__container container">
+            <nav class="nav">
                 <a class="nav__logo hover-color" href="./index.html"><span
-                        class="nav__logo--accent-text">Web</span>Studio</a>
+                        class="nav__logo--accent-color">Web</span>Studio</a>
 
-                <ul class="pages flex-vertical-align list">
-                    <li class="pages__page">
-                        <a class="nav-link hover-color" href="./index.html">Студия</a>
+                <ul class="site-nav list">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link hover-color" href="./index.html">Студия</a>
                     </li>
-                    <li class="pages__page">
-                        <p class="nav-link hover-color nav-link--active">Портфолио</p>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link hover-color site-nav__link--active">Портфолио</a>
                     </li>
-                    <li class="pages__page">
-                        <a class="nav-link hover-color" href="">Контакты</a>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link hover-color" href="">Контакты</a>
                     </li>
                 </ul>
 
             </nav>
-            <ul class="contacts flex-vertical-align list">
-                <li class="contacts__contact contact">
-                    <a class="link flex-vertical-align hover-color" href="mailto:info@devstudio.com">
-                        <svg class="contact__icon" width="16px" height="12px">
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link hover-color" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon" width="16px" height="12px">
                             <use href="./images/svg/icons.svg#mail"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
 
-                <li class="contact">
-                    <a class="link flex-vertical-align hover-color" href="tel:+380961111111">
-                        <svg class="contact__icon" width="10px" height="16px">
+                <li class="contacts__item">
+                    <a class="contacts__link hover-color" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10px" height="16px">
                             <use href="./images/svg/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -64,7 +64,7 @@
         <section class="section">
             <div class="filter container">
                 <h1 class="filter__title hiden-element">Фильтр примеров работ</h1>
-                <ul class="filter__buttons flex-vertical-align list">
+                <ul class="filter__buttons list">
                     <li class="filter__buttons-item">
                         <button class="filter__button" type="button">Все</button>
                     </li>
@@ -308,32 +308,32 @@
                 <h2 class="join__title">Присоединяйтесь</h2>
                 <ul class="socials list">
                     <li class="socials__item">
-                        <a class="socials__link flex-vertical-align hover-color" href="https://www.instagram.com/"
-                            target="_blank" rel="noopener noreferrer">
+                        <a class="socials__link hover-color" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a class="socials__link flex-vertical-align hover-color" href="https://twitter.com/"
-                            target="_blank" rel="noopener noreferrer">
+                        <a class="socials__link hover-color" href="https://twitter.com/" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a class="socials__link flex-vertical-align hover-color" href="https://facebook.com/"
-                            target="_blank" rel="noopener noreferrer">
+                        <a class="socials__link hover-color" href="https://facebook.com/" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="socials__item">
-                        <a class="socials__link flex-vertical-align hover-color" href="https://ua.linkedin.com/"
-                            target="_blank" rel="noopener noreferrer">
+                        <a class="socials__link hover-color" href="https://ua.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="join__icon" width="20" height="20">
                                 <use href="./images/svg/icons.svg#linkedin"></use>
                             </svg>
@@ -352,7 +352,7 @@
                     <label for="e-mail" class="subscribe-title"></label>
                     <input class="form__input" type="email" name="e-mail" placeholder="E-mail" id="e-mail">
 
-                    <button class="subscribe__btn flex-vertical-align" type="submit">Подписаться
+                    <button class="subscribe__btn" type="submit">Подписаться
                         <svg class="subscribe__btn-icon " width="24px" height="24px">
                             <use href="./images/svg/icons.svg#footertelegramm"></use>
                         </svg>
